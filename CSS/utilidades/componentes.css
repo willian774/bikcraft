@@ -1,0 +1,24 @@
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(var(--cor-p1), #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  transition: background 0.3s ease;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59137);
+}
+@media (max-width: 800px) {
+  .introducao a {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
