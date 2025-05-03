@@ -4,17 +4,15 @@
 }
 
 .bicicletas-lista h2 {
-  max-width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto 40px auto;
+  margin-bottom: 40px;
 }
 .bicicletas-lista ul {
   display: flex;
   gap: 40px;
-  padding: 0 20px;
+  padding: 0 20px 20px 20px;
   max-width: 1400px;
   margin: 0 auto;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .bicicletas-lista li {
@@ -37,6 +35,11 @@
   width: 12px;
   background-color: var(--cor-p1);
   margin-right: 8px;
+  transition: width 0.3s;
+}
+
+.bicicletas-lista a:hover h3:before {
+  width: 22px;
 }
 
 .bicicletas-lista li span {
