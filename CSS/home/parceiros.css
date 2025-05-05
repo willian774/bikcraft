@@ -47,6 +47,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .parceiros li {
+    padding: 20px;
     border-top: none;
   }
   .parceiros li {
