@@ -9,7 +9,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  /* justify-items: center; */
 }
 
 .seguros h2 {
@@ -59,4 +58,10 @@
 
 .seguros-item a {
   grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
 }
