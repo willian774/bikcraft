@@ -3,7 +3,11 @@
 const navlink = document.querySelectorAll(".header-menu a");
 
 function marcarlink(item) {
-  if (item.href.includes(location.href)) {
+  if (
+    item.pathname === location.pathname ||
+    (item.pathname.includes("bicicletas") &&
+      location.pathname.startsWith("/bicicletas"))
+  ) {
     item.classList.add("ativo");
   }
 }
