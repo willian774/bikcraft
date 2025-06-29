@@ -6,7 +6,7 @@ function marcarlink(item) {
   if (
     item.pathname === location.pathname ||
     (item.pathname.includes("bicicletas") &&
-      location.pathname.startsWith("/bicicletas"))
+      location.pathname.startsWith("bikcraft/bicicletas"))
   ) {
     item.classList.add("ativo");
   }
