@@ -33,7 +33,7 @@
 
 .orcamento-produto{
   border-radius: 5px 0 0 5px;
-  background: var(--cor-12);
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat bottom 20px left 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -110,7 +110,7 @@ pointer-events: none;
 
 .orcamento-dados{
   border-radius: 0 5px 5px 0;
-  background: var(--cor-0)
+  background: var(--cor-0) url('../../img/dec/bottom-right.svg') no-repeat bottom 20px right 20px;
 }
 
 
@@ -122,16 +122,10 @@ display: none;
   margin-top: 20px;
 }
 
-#bikcraft:checked + label, #seguro:checked + label{
-}
 #bikcraft:checked ~ #orcamento-bikcraft,
 #seguro:checked ~ #orcamento-seguro {
 display: grid;
 gap: 20px;
-}
-
-#orcamento-bikcraft, #seguro-bikcraft{
-  /* display: none; */
 }
 
 .orcamento-detalhes{
@@ -164,12 +158,13 @@ gap: 20px;
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 800px){
 .orcamento{
   grid-template-columns: 1fr;
 }
 .orcamento-produto{
   border-radius: 5px 5px 0 0 ;
+  background: var(--cor-12);
 }
 .orcamento-dados {
   border-radius: 0 0 5px 5px;
