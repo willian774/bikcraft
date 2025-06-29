@@ -6,7 +6,7 @@ function marcarlink(item) {
   if (
     item.pathname === location.pathname ||
     (item.pathname.includes("bicicletas") &&
-      location.pathname.startsWith("/bikcraft/bicicletas.html"))
+      location.pathname.startsWith("/bikcraft/bicicletas"))
   ) {
     item.classList.add("ativo");
   }
@@ -65,3 +65,8 @@ function eventoImagens(bicicletas) {
 }
 
 imagensGaleria.forEach(eventoImagens);
+
+// animação plugin
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

@@ -4,6 +4,7 @@
 
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/plugin-animacao.css";
 
 /* utilidades */
 @import "./utilidades/componentes.css";
